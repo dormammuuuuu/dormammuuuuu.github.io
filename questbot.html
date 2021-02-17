@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <title>QuestBot</title>
+    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="projects/all_projects.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body class="proj_bg">
+    <!--Top padding-->
+    <div class="top_padding"></div>
+
+    <div class="questbot_open_bg">
+      <!--HEADER-->
+      <div class="container-fluid" id="head">
+      </div>
+      <script type="text/javascript">
+        $(function(){
+        $("#head").load("assets/header.html");
+        });
+      </script>
+      <div class="title">
+        <span class="proj_title" id="qbot_title">QUESTBOT</span>
+      </div>
+    </div>
+    <div class="proj_buttons" align="center">
+      <span class="proj_buttons_label" id="default_tab" onclick="viewTab(event,'Description')">Description</span>
+      <span class="proj_buttons_label" onclick="viewTab(event,'Preview')">Preview</span>
+      <span class="proj_buttons_label" onclick="viewTab(event,'Team')">Team</span>
+      <span class="proj_buttons_label" onclick="viewTab(event,'Download')">Code</span>
+    </div>
+
+    <div class="description" id="Description">
+      <p><strong>QuestBot</strong> is a game where users can control and manipulate the movements or directions of a robot. The robot can freely move and will encounter questions before turning on the lights. There is a starting point and a finish line. This system will enhance the mind-skill of the user.</p>
+      <hr>
+      <p class="description_title"><strong><br/><br/>GAME SET UP</strong></p>
+      <p class="description_subtitle">Copy the "robot_map.dat" then paste it in <strong>C:\emu8086\DEVICES</strong><p>
+      <img class="description_image" src="projects/questbot_images/1_questbot.png" />
+      <p class="description_subtitle">Copy the DIRECTORY folder then paste it in <strong>C:\emu8086\MyBuild\here</strong></p>
+      <img class="description_image" src="projects/questbot_images/2_questbot.png" />
+      <p class="description_subtitle">This game has 1 level. If the user wants to restart the game <strong>, he/she must reset the map manually by moving the robot_map.dat in C:/emu8086/DEVICES.</strong></p>
+    </div>
+    <div class="description" id="Preview">
+      <img class="description_image" style="margin-bottom: 5px;" src="projects/questbot_images/3_questbot.png" />
+      <img class="description_image" style="margin-bottom: 5px;" src="projects/questbot_images/4_questbot.png" />
+      <img class="description_image" style="margin-bottom: 5px;" src="projects/questbot_images/5_questbot.png" />
+      <img class="description_image" style="margin-bottom: 5px;" src="projects/questbot_images/6_questbot.png" />
+    </div>
+    <div class="description" id="Team">
+      <p class="description_title"><strong>SANTOS TECH. TEAM</strong></p>
+      <div class="profile" style="background-color: #1ebbd7;">
+        <img class="profile_image" src="images/santos_tech/francis.png"/>
+        <p><strong>Francis Panaligan</strong></p>
+        <p class="job_distribution">Quality Assurance</p>
+        <p class="job_distribution">Documentation</p>
+      </div>
+      <div class="profile" style="background-color: #ff009b; color: white;">
+        <img class="profile_image" src="images/santos_tech/raymond.png"/>
+        <p><strong>Raymond Matullano</strong></p>
+        <p class="job_distribution">Proposal Creator </p>
+        <p class="job_distribution">Editor</p>
+      </div>
+      <div class="profile" style="background-color: #ffcf40;">
+        <img class="profile_image" src="images/santos_tech/ramino.jpg"/>
+        <p><strong>Ramino Santos</strong></p>
+        <p class="job_distribution">Quality Assurance</p>
+        <p class="job_distribution">Documentation</p>
+      </div>
+      <div class="profile" style="background-color: #191919; color: white;">
+        <img class="profile_image" src="images/santos_tech/jerico.jpg"/>
+        <p><strong>Jerico Victoria</strong></p>
+        <p class="job_distribution">Lead Programmer</p>
+        <p class="job_distribution">Quality Assurance</p>
+      </div>
+    </div>
+    <div class="description" id="Download">
+      <p class="description_subtitle">You can view and download the source code at the GitHub link below</p>
+      <div class="download_container" onclick="window.open('https://github.com/dormammuuuuu/questbot','_blank')">View Source Code<p class="dl_info">dormammuuuuu/questbot</p></div>
+    </div>
+    <div id="modal" class="img_preview">
+      <span class="close">×</span>
+      <img class="img_preview-content" id="img01">
+      <div id="caption"></div>
+    </div>
+    <script src="js/all_projects.js"></script>
+    <script src="projects/projects.js"></script>
+    <div class="extra"></div>
+</body>
+</html>

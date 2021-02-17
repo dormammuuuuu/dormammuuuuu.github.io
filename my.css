@@ -1,0 +1,66 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    font-style: Segoe UI;
+    position: absolute;
+    z-index: -1;
+    scroll-behavior: smooth;
+    background-size: 500% 500%;
+    background-image: -o-linear-gradient(
+                315deg,
+                #110a2b 0%,
+                #1a062e 29%,
+                #4a061c 67%,
+                #2b2a00 100%);
+            background-image: linear-gradient(
+                -225deg,
+                #110a2b 0%,
+                #1a062e 29%,
+                #4a061c 67%,
+                #2b2a00 100%);
+            -webkit-animation: change_bg 15s linear infinite;
+                    animation: change_bg 15s linear infinite;
+        }
+        @-webkit-keyframes change_bg{
+            50%{
+                background-position: 100% 100%;
+            }
+        }
+        @keyframes change_bg{
+            50%{
+                background-position: 100% 100%;
+            }
+        }
+
+p{
+  color: #cccccc;
+}
+
+@media screen and (max-width: 480px) {
+  body{
+    max-width: 480px;
+  }
+}
+
+::selection {
+  color: none;
+  background: none;
+}
+
+::-webkit-scrollbar{
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/*Header text font*/
+@font-face {
+  font-family: "FredokaOne";
+  src: url("fonts/FredokaOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "FredokaOne";
+}

@@ -1,0 +1,90 @@
+  <!DOCTYPE HTML>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <title>Cocina De Manila</title>
+    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="projects/all_projects.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body class="proj_bg">
+
+
+    <!--Top padding-->
+    <div class="top_padding"></div>
+
+    <div class="cocina_open_bg">
+      <!--HEADER-->
+      <div class="container-fluid" id="head">
+      </div>
+      <script type="text/javascript">
+        $(function(){
+        $("#head").load("assets/header.html");
+        });
+      </script>
+      <div class="title">
+        <span class="proj_title">COCINA DE MANILA</span>
+      </div>
+    </div>
+    <div class="proj_buttons" align="center">
+      <span class="proj_buttons_label" id="default_tab" onclick="viewTab(event,'Description')">Description</span>
+      <span class="proj_buttons_label" onclick="viewTab(event,'Preview')">Preview</span>
+      <span class="proj_buttons_label" onclick="viewTab(event,'Download')">Code</span>
+    </div>
+    <div class="description" id="Description">
+        <p><strong>Cocina De Manila</strong> is a Food Delivery system that allows user to manage their orders through our restaurant’s food delivery system in an easier way. By providing a platform to anyone who are craving for their favorite food in our menu without the need to go out.</p>
+        <p>The purpose of our system is to bring good food whenever or wherever they want. <br/>Anyone can sit back and relax -- 'Cause you order, we deliver.  </p>
+      </div>
+      <div class="description" id="Preview">
+        <p class="description_title"><strong>LOG IN PAGE</strong></p>
+        <p class="description_subtitle"> When the program opens, the<strong> Log in page</strong> will appear. The user can choose whether to sign up or log in.</p>
+        <img class="description_image" src="projects/cocina_images/bg.png" alt=""/>
+        <p class="description_subtitle">If <strong>Sign up</strong> is selected, the user must fill in the required information.</p>
+        <img class="description_image" src="projects/cocina_images/1_cocina.png"/>
+        <img class="description_image" src="projects/cocina_images/2_cocina.png"/>
+        <p class="description_subtitle">If <strong>Log in</strong> is selected, the user must fill in the information he/she used upon registration.</p>
+        <img class="description_image" src="projects/cocina_images/3_cocina.png"/>
+        <p class="description_title"><br/><br/><strong>MAIN PAGE</strong></p>
+        <p class="description_subtitle">On the main page, the user has four options: The <strong>Browse food</strong> is used to browse the menu and select the items you will like to order, items added to your cart can be viewed in the <strong>Cart</strong> menu. You can update/change your account information in the <strong>User profile</strong>, and the <strong>Sign out</strong> option to log out your account.</p>
+        <img class="description_image" src="projects/cocina_images/4_cocina.png"/>
+        <hr>
+        <p class="description_title"><br/><br/><strong>FOOD MENU</strong></p>
+        <p class="description_subtitle">Build up your meal by browsing the menu and select the items you like to order. Items seleted will appear on your cart.</p>
+        <img class="description_image" src="projects/cocina_images/5_cocina.png"/>
+        <p class="description_subtitle">Here is an example on how to order a food in our menu.</p>
+        <img class="description_image" src="projects/cocina_images/6_cocina.png"/>
+        <img class="description_image" src="projects/cocina_images/7_cocina.png"/>
+        <hr>
+        <p class="description_title"><br/><br/><strong>CART</strong></p>
+        <p class="description_subtitle">The cart contains the user's orders. You can remove or place your order here.</p>
+        <img class="description_image" src="projects/cocina_images/8_cocina.png"/>
+        <p class="description_subtitle">If the user pressed <strong>1</strong>, he/she can remove an item from the list.</p>
+        <img class="description_image" src="projects/cocina_images/9_cocina.png"/>
+        <img class="description_image"src="projects/cocina_images/10_cocina.png"/>
+        <p class="description_subtitle">If the user pressed <strong>2</strong>, he/she can now pay the orders. The receipt will appear after placing the orders.</p>
+        <img class="description_image" src="projects/cocina_images/11_cocina.png"/>
+        <img class="description_image" src="projects/cocina_images/12_cocina.png"/>
+        <img class="description_image" src="projects/cocina_images/13_cocina.png"/>
+        <p class="description_subtitle">If the user pressed <strong>3</strong>, he/she can see the summary of delivery charges to pay depending on the user's location.</p>
+        <img class="description_image" src="projects/cocina_images/14_cocina.png"/>
+        <hr>
+        <p class="description_title"><br/><br/><strong>USER PROFILE</strong></p>
+        <p class="description_subtitle">The user can update his/her account information such as name, address, email, and password.</p>
+        <img class="description_image" src="projects/cocina_images/15_cocina.png"/>
+      </div>
+      <div class="description" id="Download">
+        <p class="description_subtitle">You can view and download the source code at the GitHub link below</p>
+        <div class="download_container" onclick="window.open('https://github.com/dormammuuuuu/cocina_de_manila','_blank')">View Source Code<p class="dl_info">dormammuuuuu/cocina_de_manila</p></div>
+      </div>
+    <script src="js/all_projects.js"></script>
+    <div id="modal" class="img_preview">
+      <span class="close">×</span>
+      <img class="img_preview-content" id="img01">
+      <div id="caption"></div>
+    </div>
+    <script src="projects/projects.js"></script>
+
+    <div class="extra"></div>
+  </body>
+</html>

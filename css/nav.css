@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+
+/*Fix the white space problem when "position:fixed" was declared in the header*/
+header{
+  position: absolute;
+  top: 0;
+  overflow: visible;
+  width: inherit;
+  height: auto;
+}
+
+/* Nav hprizontal list style  */
+.header ul, li{
+  display: inline-block;
+}
+
+/*Header*/
+.header{
+  z-index: 1;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  height: 68px;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+/*Header text*/
+.header_text, .header_text_index{
+  float: left;
+  position: absolute;
+  vertical-align: middle;
+  color: #cccccc;
+  font-size: 40px;
+  font-family: FredokaOne;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  padding: 7px 8px;
+  width: auto;
+}
+.header_text_index{
+
+
+}
+
+/*Center the nav buttons*/
+.button_center{
+  margin-top: 4px;
+  margin-right: 5%;
+  float: right;
+  text-align: center;
+}
+
+/*Header Buttons*/
+.header_button, .header_button_active {
+  padding-top: 0;
+  color: #cccccc;
+  font-size: 22px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  margin-top: 10px;
+  margin: 10px;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-color: transparent;
+}
+
+/* Active tab effect */
+.header_button_active{
+  border-bottom-style: solid;
+  border-color: #2F9832;
+}
+
+/*Header Button Hover*/
+.header_button:hover {
+  border-bottom-style: solid;
+  border-color: #cccccc;
+}
+
+.button_center a{
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222531;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: -50px;
+  overflow-y: scroll;
+}
+
+.dropdown-content a {
+  font-family: Segoe UI;
+  float: none;
+  color: #cccccc;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #111111;
+}
+
+.button_center:hover .dropdown-content {
+  display: block;
+}
+
+
+@media screen and (max-width: 560px) {
+  .dropdown-content {
+    margin-left: -100px;
+  }
+  .header{
+    height: 59px;
+  }
+
+  .header_text{
+    font-size: 30px;
+  }
+
+  .header_button, .header_button_active{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .button_center{
+    margin-right: 10%;
+  }
+  .header{
+    height: 50px;
+  }
+
+  .header_text{
+    font-size: 23px;
+  }
+
+  .header_button, .header_button_active{
+    font-size: 10px;
+  }
+}

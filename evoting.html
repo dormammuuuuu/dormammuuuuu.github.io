@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <title>E-Voting System</title>
+    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="projects/all_projects.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body class="proj_bg">
+    <!--Top padding-->
+    <div class="top_padding"></div>
+
+    <div class="evoting_open_bg">
+      <!--HEADER-->
+      <div class="container-fluid" id="head">
+      </div>
+      <script type="text/javascript">
+        $(function(){
+        $("#head").load("assets/header.html");
+        });
+      </script>
+      <div class="title">
+        <span class="proj_title">E-VOTING SYSTEM</span>
+      </div>
+    </div>
+    <div class="proj_buttons" align="center">
+      <span class="proj_buttons_label" id="default_tab" onclick="viewTab(event,'Description')">Description</span>
+      <span class="proj_buttons_label" onclick="viewTab(event,'Preview')">Preview</span>
+      <span class="proj_buttons_label" onclick="viewTab(event,'Download')">Code</span>
+    </div>
+
+    <div class="description" id="Description">
+      <p>This program was made to create an <strong>E-Voting system for Senior High School in Arellano University Apolinario Mabini Campus</strong>. It’s purpose is to promote transparency and provide honest result of the election voting.</p>
+      <p>This e-voting system is highly secured, reliable, and user-friendly. The proposed software is designed and tested to work on LAN network.</p>
+      <p><strong>This program was made using Visual Basic 6.</strong></p>
+    </div>
+    <div class="description" id="Preview">
+      <p class="description_title"><strong>PREVIEW</strong><br/><br/></p>
+      <img class="description_image" src="projects/evoting_images/bg.png"/>
+      <img class="description_image" src="projects/evoting_images/1_evoting.png"/>
+      <img class="description_image" src="projects/evoting_images/2_evoting.png"/>
+      <img class="description_image" src="projects/evoting_images/3_evoting.png"/>
+      <img class="description_image" src="projects/evoting_images/4_evoting.png"/>
+    </div>
+    <div class="description" id="Download">
+      <p class="description_subtitle">You can view and download the source code at the GitHub link below</p>
+      <div class="download_container" onclick="window.open('https://github.com/dormammuuuuu/voting_system_software','_blank')">View Source Code<p class="dl_info">dormammuuuuu/voting_system_software</p></div
+    </div>
+    <script src="js/all_projects.js"></script>
+    <div id="modal" class="img_preview">
+      <span class="close">×</span>
+      <img class="img_preview-content" id="img01">
+      <div id="caption"></div>
+    </div>
+    <script src="projects/projects.js"></script>
+  </body>
+</html>
