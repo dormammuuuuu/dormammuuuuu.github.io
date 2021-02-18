@@ -64,3 +64,10 @@ p{
 @font-face {
   font-family: "FredokaOne";
 }
+
+#error-body{
+  background: url("https://p.kindpng.com/picc/s/17-176736_download-monsters-university-png-free-download-monsters-university.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
