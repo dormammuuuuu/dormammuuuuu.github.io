@@ -2,7 +2,6 @@
 
 /*Fix the white space problem when "position:fixed" was declared in the header*/
 header{
-  position: absolute;
   top: 0;
   overflow: visible;
   width: inherit;
@@ -19,7 +18,7 @@ header{
   z-index: 1;
   display: inline-block;
   vertical-align: middle;
-  position: absolute;
+  position: relative;
   height: 68px;
   width: 100%;
   padding-top: 10px;
