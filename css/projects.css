@@ -11,10 +11,11 @@
   display: block;
   margin-left: 0px;
   margin-right: 0px;
-  width: 100%;
+  margin-top: -40px;
+  width: 95%;
   height: 200px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 /*Remove margins and paddings of paragraph*/
@@ -62,14 +63,17 @@ p {
 .card {
   box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 8%), 0 0 180px 0 rgb(0 0 0 / 8%);
   margin: 15px;
+  margin-bottom: 70px;
+  padding-bottom: 10px;
   transition: ease transform .2s;
   cursor: pointer;
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 2px;
   width: 330px;
-  height: 100%;
+  height: fit-content;
   color: black;
   background-color: #323538;
+  overflow: visible;
 }
 
 /*Title style*/
