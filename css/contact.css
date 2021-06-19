@@ -1,22 +1,22 @@
-.top_padding{
+.top_padding {
   height: 100px;
   width: 100%;
 }
 
-.container_1{
+.container_1 {
   animation: ease transitionIn 1.3s;
   display: block;
   height: auto;
   padding: 0;
 }
 
-.contact_container{
+.contact_container {
   cursor: pointer;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 13px;
   width: 400px;
-  height: 30px;
+  height: 50px;
   display: block;
   text-decoration: none;
   border-radius: 5px;
@@ -25,71 +25,74 @@
   font-family: Segoe UI;
   font-weight: bold;
   font-size: 17px;
-  box-shadow: 0 3px 10px 0 rgba(0,0,0,.5);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
   transition: ease transform .5s, ease height .5s;
   overflow: hidden;
 }
 
-.contact_container:hover{
-  height: 60px;
+.contact_container:hover {
+  height: 80px;
   transform: scale(1.1);
 }
 
-#email{
+#email {
   background-image: url("../assets/contact_images/email.png");
   color: white;
 }
 
-#phone{
+#phone {
   background-image: url("../assets/contact_images/phone.png");
   color: white;
 }
 
-#fb{
+#fb {
   background-image: url("../assets/contact_images/fb.png");
   color: white;
 }
 
-#twitter{
+#twitter {
   background-image: url("../assets/contact_images/twitter.png");
   color: white;
 }
 
-#linkedin{
+#linkedin {
   background-image: url("../assets/contact_images/linkedin.png");
   color: white;
 }
 
-a{
+a {
   font-weight: normal;
   padding-top: 8px;
   font-size: 15px;
   text-decoration: none;
+  color: white !important;
+}
+
+.info {
+  display: block;
+  margin-top: 4px;
+  text-decoration: none;
   color: white;
 }
 
-.info{
-  display: block;
-  margin-top: 4px;
-}
-
 @keyframes transitionIn {
-  from{
+  from {
     opacity: 0;
     padding-top: 300px;
   }
-  to{
+
+  to {
     opacity: 1;
     padding-top: 0px;
   }
 }
 
-@media screen and (max-width: 480px){
-  .contact_container{
+@media screen and (max-width: 480px) {
+  .contact_container {
     width: 70%;
   }
 
-  .contact_container:hover{
+  .contact_container:hover {
     height: 53px;
   }
 }

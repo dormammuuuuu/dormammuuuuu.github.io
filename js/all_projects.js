@@ -1,4 +1,4 @@
-function viewTab(evt, tabName){
+function viewTab(evt, tabName) {
   var i, content, button_status;
   content = document.getElementsByClassName("description");
   for (i = 0; i < content.length; i++) {
@@ -10,6 +10,6 @@ function viewTab(evt, tabName){
   }
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
-  }
+}
 
-  document.getElementById("default_tab").click();
+document.getElementById("default_tab").click();

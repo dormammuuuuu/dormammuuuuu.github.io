@@ -5,14 +5,14 @@ var img = document.getElementsByClassName('ps_description_image');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 
-var showModal = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+var showModal = function() {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
 }
 
 for (var i = 0; i < img.length; i++) {
-    img[i].addEventListener('click', showModal);
+  img[i].addEventListener('click', showModal);
 }
 
 // Get the <span> element that closes the modal
@@ -20,5 +20,5 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-    modal.style.display = "none";
+  modal.style.display = "none";
 }

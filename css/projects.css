@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
-.top_padding{
+.top_padding {
   height: 50px;
   width: 100%;
 }
 
 /*Image properties*/
-#img_display{
+#img_display {
   object-fit: cover;
   display: block;
   margin-left: 0px;
@@ -18,16 +18,16 @@
 }
 
 /*Remove margins and paddings of paragraph*/
-p{
+p {
   margin: 0;
   padding: 0;
 }
 
-.container-proj{
+.container-proj {
   margin: auto;
 }
 
-.index_title{
+.index_title {
   color: white;
   font-family: 'Inter', sans-serif;
   text-transform: uppercase;
@@ -38,7 +38,7 @@ p{
 }
 
 /*Row 1 cards*/
-.row_1{
+.row_1 {
   display: inline-block;
   vertical-align: center;
   height: 300px;
@@ -47,18 +47,19 @@ p{
 }
 
 @keyframes transitionIn {
-  from{
+  from {
     opacity: 0;
     padding-top: 300px;
   }
-  to{
+
+  to {
     opacity: 1;
     padding-top: 0px;
   }
 }
 
 /*Card 1/2/3 container*/
-.card{
+.card {
   box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 8%), 0 0 180px 0 rgb(0 0 0 / 8%);
   margin: 15px;
   transition: ease transform .2s;
@@ -72,7 +73,7 @@ p{
 }
 
 /*Title style*/
-.card_title{
+.card_title {
   padding-top: 10px;
   text-align: center;
   font-family: Segoe UI;
@@ -82,7 +83,7 @@ p{
 }
 
 /*Sub title style*/
-.sub_title{
+.sub_title {
   font-size: 12px;
   font-family: Segoe UI;
   text-align: center;
@@ -90,7 +91,7 @@ p{
 }
 
 /*Description style*/
-.s_desc p{
+.s_desc p {
   font-family: Segoe UI;
   text-align: center;
   font-size: 13px;
@@ -98,49 +99,50 @@ p{
 }
 
 /*Programming Language style*/
-.prog_language{
+.prog_language {
   font-family: 'Courier Prime', monospace;
 }
 
 /*Hover card 1*/
-.card:hover{
+.card:hover {
   background-color: #2E9330;
   color: white;
   transform: scale(1.05);
 }
-.extra{
+
+.extra {
   height: 100px;
 }
 
 @media screen and (max-width: 380px) {
-  #img_display{
+  #img_display {
     height: 190px;
   }
 
-  .top_padding{
+  .top_padding {
     height: 100px;
   }
 
-  .row_1{
+  .row_1 {
     height: 270px;
   }
 
-  .card{
+  .card {
     width: 300px;
   }
 
   /*Title style*/
-  p.card_title{
+  p.card_title {
     font-size: 12px;
   }
 
   /*Sub title style*/
-  p.sub_title{
+  p.sub_title {
     font-size: 9px;
   }
 
   /*Description style*/
-  .s_desc p{
+  .s_desc p {
     font-size: 10px;
   }
 }
