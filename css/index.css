@@ -6,7 +6,6 @@
   background-color: transparent;
   height: 70vh;
   width: 100vw;
-  margin-top: 2em;
 }
 
 .index_intro {
@@ -151,6 +150,7 @@
   }
 
   .index_bg {
+    margin-top: 5em;
     flex-direction: column;
   }
 

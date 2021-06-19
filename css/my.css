@@ -58,7 +58,7 @@ p{
 /*Header text font*/
 @font-face {
   font-family: "FredokaOne";
-  src: url("fonts/FredokaOne-Regular.ttf");
+  src: url("../fonts/FredokaOne-Regular.ttf");
 }
 
 @font-face {

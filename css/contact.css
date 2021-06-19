@@ -36,27 +36,27 @@
 }
 
 #email{
-  background-image: url("contact_images/email.png");
+  background-image: url("../assets/contact_images/email.png");
   color: white;
 }
 
 #phone{
-  background-image: url("contact_images/phone.png");
+  background-image: url("../assets/contact_images/phone.png");
   color: white;
 }
 
 #fb{
-  background-image: url("contact_images/fb.png");
+  background-image: url("../assets/contact_images/fb.png");
   color: white;
 }
 
 #twitter{
-  background-image: url("contact_images/twitter.png");
+  background-image: url("../assets/contact_images/twitter.png");
   color: white;
 }
 
 #linkedin{
-  background-image: url("contact_images/linkedin.png");
+  background-image: url("../assets/contact_images/linkedin.png");
   color: white;
 }
 
