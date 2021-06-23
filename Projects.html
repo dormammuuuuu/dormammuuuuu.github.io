@@ -105,7 +105,18 @@
       </div>
     </div>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script>
+    $(function() {
+      var cards = $('.card');
+      for (let i = 1; i < cards.length + 1; i++) {
+        $(cards[i - 1]).delay(i * 300).animate({
+          left: "0",
+          opacity: "1"
+        }, "slow");
+      }
+    });
+  </script>
   <div class="extra"></div>
 </body>
 

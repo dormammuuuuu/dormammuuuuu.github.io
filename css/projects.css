@@ -16,6 +16,8 @@
   height: 200px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  filter:grayscale(100%) brightness(70%);
+  transition: ease .3s;
 }
 
 /*Remove margins and paddings of paragraph*/
@@ -74,6 +76,9 @@ p {
   color: black;
   background-color: #323538;
   overflow: visible;
+  position: relative;
+  left: 5%;
+  opacity: 0;
 }
 
 /*Title style*/
@@ -112,6 +117,10 @@ p {
   background-color: #2E9330;
   color: white;
   transform: scale(1.05);
+}
+
+.card:hover>#img_display {
+  filter: none;
 }
 
 .extra {

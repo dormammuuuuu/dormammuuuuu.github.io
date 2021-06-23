@@ -10,51 +10,61 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 
-<body class="proj_bg">
+<body class="proj_bg" onload="startUp()">
+
   <div class="top_padding"></div>
   <div class="calculator_open_bg">
-    <div class="container-fluid" id="head">
+    <div id="head">
     </div>
     <div class="title">
       <span class="proj_title">CALCULATOR </span>
     </div>
   </div>
 
-  <div class="proj_buttons" align="center">
-    <span class="proj_buttons_label" id="default_tab" onclick="viewTab(event,'Description')">Description</span>
-    <span class="proj_buttons_label" onclick="viewTab(event,'Preview')">Preview</span>
-    <span class="proj_buttons_label" onclick="viewTab(event,'Download')">Code</span>
-  </div>
+  <ul id="tabs" class="nav nav-pills nav-justified">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#Description">Description</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Preview">Preview</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Download">Source Code</a>
+    </li>
+  </ul>
 
   <!-- BODY -->
-  <div class="description" id="Description">
-    <p>This is a simple <strong>JAVA CALCULATOR with GUI</strong>. It can perform basic arithmetic operations like addition, subtraction, multiplication, and division. The program takes the value of the numbers (entered by the user) and then performs
-      the selected operation.</p>
-    <p><strong>Note : this program might not run in an online compiler. Please use an offline IDE.</strong></p>
-  </div>
-  <div class="description" id="Preview">
-    <p class="description_title"><strong>VIDEO PREVIEW</strong><br /><br /></p>
-    <video width="40%" height="40%" controls autoplay>
-      <source src="../assets/videos/calculator.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <div class="description" id="Download">
-    <p class="description_subtitle">You can view and download the source code at the GitHub link below</p>
-    <div class="download_container" onclick="window.open('https://github.com/dormammuuuuu/java_gui_calculator','_blank')">View Source Code<p class="dl_info">dormammuuuuu/java_gui_calculator</p>
+  <section id="cont">
+    <div id="Description" class="d-margin">
+      <p>This is a simple <strong>JAVA CALCULATOR with GUI</strong>. It can perform basic arithmetic operations like addition, subtraction, multiplication, and division. The program takes the value of the numbers (entered by the user) and then performs
+        the selected operation.</p>
+      <p><strong>Note : this program might not run in an online compiler. Please use an offline IDE.</strong></p>
     </div>
-  </div>
-  <div id="modal" class="img_preview">
-    <span class="close">×</span>
-    <img class="img_preview-content" id="img01">
-    <div id="caption"></div>
-  </div>
+    <div id="Preview" class="d-margin">
+      <p class="description_title"><strong>VIDEO PREVIEW</strong><br /><br /></p>
+      <div id="video-preview" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video class="d-block" autoplay controls muted>
+              <source src="assets/videos/calculator.mp4" type="video/mp4"/>
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Download" class="d-margin">
+      <p class="description_subtitle">You can view and download the source code at the GitHub link below</p>
+      <div class="download_container" onclick="window.open('https://github.com/dormammuuuuu/java_gui_calculator','_blank')">View Source Code<p class="dl_info">dormammuuuuu/java_gui_calculator</p>
+      </div>
+    </div>
+  </section>
+
   <div class="extra"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <script src="js/all_projects.js"></script>
   <script src="js/projects.js"></script>
   <script src="js/index.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <script type="text/javascript">
     $(function() {
       $("#head").load("header.html");
