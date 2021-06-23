@@ -138,6 +138,29 @@ video{
   width: auto!important;
   max-height: 70vh;
   margin: auto;
+  cursor: pointer;
+}
+
+.carousel-caption{
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0!important;
+  right: 0!important;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-bottom: -1.3em;
+}
+
+.carousel-indicators{
+  margin-bottom: 0!important;
+}
+
+.sub{
+  color: white;
+}
+
+.carousel-inner:hover .carousel-caption{
+  visibility: hidden;
 }
 
 .description_title {
