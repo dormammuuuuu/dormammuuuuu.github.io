@@ -1,6 +1,6 @@
 var galleryCarousel = document.querySelector('#galleryCarousel')
 var carousel = new bootstrap.Carousel(galleryCarousel, {
-  interval: 1500,
+  interval: 2000,
   wrap: false
 })
 
@@ -11,12 +11,6 @@ triggerTabList.forEach(function (triggerEl) {
   triggerEl.addEventListener('click', function (event) {
     tabTrigger.show()
   })
-})
-
-var myCarousel = document.querySelector('#galleryCarousel')
-var carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 2000,
-  wrap: false
 })
 
 function startUp(){
