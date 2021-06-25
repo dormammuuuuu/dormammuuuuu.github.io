@@ -47,6 +47,7 @@
   width: 30px;
   height: 30px;
   filter: invert(100%) opacity(.2);
+  transition: ease filter .3s;
 }
 
 .index_buttons:hover {
