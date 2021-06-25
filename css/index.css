@@ -50,7 +50,7 @@
 }
 
 .index_buttons:hover {
-  filter: invert(100%) opacity(.8);
+  filter: invert(52%) sepia(13%) saturate(2481%) hue-rotate(72deg) brightness(89%) contrast(86%);
 }
 
 .my_img {
