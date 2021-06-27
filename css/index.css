@@ -62,6 +62,8 @@
 }
 
 .my_img img {
+  border: 1px solid white;
+  padding: .8em;
   border-radius: 50%;
   max-width: 300px;
   max-height: 300px;

@@ -17,17 +17,72 @@
 
   <div class="top_padding"></div>
 
+  <ul class="nav nav-tabs tabs-cont" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link nav-tabs-link active" id="direct-tab" data-bs-toggle="tab" data-bs-target="#direct" type="button" role="tab" aria-controls="home" aria-selected="true">DIRECT MESSAGE</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link nav-tabs-link" id="social-tab" data-bs-toggle="tab" data-bs-target="#social" type="button" role="tab" aria-controls="profile" aria-selected="false">OTHER ACCOUNTS</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active cont" id="direct" role="tabpanel" aria-labelledby="home-tab">
+      <h2 class="text-center text-header mb-3">GET IN TOUCH</h2>
+      <form class="row g-1 needs-validation" novalidate action="https://formspree.io/f/xgerzoqj" method="POST">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="name" placeholder="Name" required>
+          <label for="name">Name</label>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Name is required.
+          </div>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="mail" placeholder="name@example.com" name="From:" required>
+          <label for="mail">Email address</label>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Email is required.
+          </div>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" placeholder="Leave a comment here" id="message" style="height: 100px" name="Message:" required></textarea>
+          <label for="message">Comments</label>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            A message is required.
+          </div>
+        </div>
+        <div class="button-margin text-center">
+          <button class="btn btn-primary" type="submit">SEND</button>
+          <button class="btn btn-danger" onclick="reset()">RESET</button>
+        </div>
+      </form>
+    </div>
+    <div class="tab-pane fade cont" id="social" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="contact_container" id="email">Email<a class="info" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jericovic64@gmail.com">jericovic64@gmail.com</a></div>
+      <div class="contact_container" id="phone">Phone<a class="info" target="_blank" href="tel:+639984778347">+639984778347</a></div>
+      <div class="contact_container" id="fb">Facebook<a class="info" target="_blank" href="https://www.facebook.com/jerico.victoria18">jerico.victoria18</a></div>
+      <div class="contact_container" id="twitter">Twitter<a class="info" target="_blank" href="https://www.twitter.com/@dormammuuuuu">@dormammuuuuu</a></div>
+      <div class="contact_container" id="linkedin">LinkedIn<a class="info" target="_blank" href="https://www.linkedin.com/in/jericovictoria18">/jericovictoria18</a></div>
+    </div>
+  </div>
+  <!--
   <div class="container_1" align="center">
 
-    <div class="contact_container" id="email">Email<a class="info" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jericovic64@gmail.com">jericovic64@gmail.com</a></div>
-    <div class="contact_container" id="phone">Phone<a class="info" target="_blank" href="tel:+639984778347">+639984778347</a></div>
-    <div class="contact_container" id="fb">Facebook<a class="info" target="_blank" href="https://www.facebook.com/jerico.victoria18">jerico.victoria18</a></div>
-    <div class="contact_container" id="twitter">Twitter<a class="info" target="_blank" href="https://www.twitter.com/@dormammuuuuu">@dormammuuuuu</a></div>
-    <div class="contact_container" id="linkedin">LinkedIn<a class="info" target="_blank" href="https://www.linkedin.com/in/jericovictoria18">/jericovictoria18</a></div>
+
 
   </div>
+  -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="js/validation.js"></script>
   <script type="text/javascript">
     $(function() {
       $("#head").load("header.html");
