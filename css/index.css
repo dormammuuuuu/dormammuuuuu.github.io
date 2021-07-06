@@ -11,7 +11,9 @@
 .index_intro {
   display: flex;
   flex-direction: column;
-  animation: ease fadeIn 3s;
+  position: relative;
+  left: 4%;
+  opacity: 0;
   margin-bottom: 2em;
   margin-left: 5%;
 }
@@ -38,6 +40,12 @@
   color: #828282;
 }
 
+#head{
+  position: relative;
+  bottom: 3%;
+  opacity: 0;
+}
+
 .contact_container {
   margin-left: 20px;
 }
@@ -54,23 +62,20 @@
   filter: invert(52%) sepia(13%) saturate(2481%) hue-rotate(72deg) brightness(89%) contrast(86%);
 }
 
-.my_img {
-  vertical-align: middle;
-  text-align: center;
-  color: black;
-  animation: ease rtoleft 1s;
-}
-
 .my_img img {
   border: 1px solid white;
   padding: .8em;
   border-radius: 50%;
   max-width: 300px;
   max-height: 300px;
+  position: relative;
+  right: 10%;
+  opacity: 0;
 }
 
 .arrows {
   position: relative;
+  opacity: 0;
   margin: auto;
   width: 80px;
   height: 80px;
