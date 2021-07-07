@@ -26,6 +26,12 @@ p {
   padding: 0;
 }
 
+#project-tabs{
+  position: relative;
+  margin-bottom: 5em;
+  width: fit-content;
+}
+
 .container-proj {
   margin: auto;
 }

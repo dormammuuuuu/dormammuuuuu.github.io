@@ -5,8 +5,6 @@
 <head>
   <title>Projects - JMV</title>
   <link rel="stylesheet" href="css/my.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/projects.css">
 </head>
 
 <body>
@@ -14,43 +12,66 @@
   <!-- Row 1 -->
   <div class="row_1" align="center">
     <h1 class="index_title"> Projects </h1>
-    <div onclick="window.open('https://codepen.io/dormammuuuuu/full/MWbpNjN','_blank');" class="card" data-aos="fade-down-right">
+
+    <div id="project-tabs">
+      <div class="btn-group" role="group" aria-label="Buttons for Projects">
+        <input type="radio" class="btn-check" value="all" onchange="projectShow(this)" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-light" for="btnradio1">ALL</label>
+
+        <input type="radio" class="btn-check" value="web" onchange="projectShow(this)" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-light" for="btnradio2">WEBSITES</label>
+
+        <input type="radio" class="btn-check" value="other" onchange="projectShow(this)" name="btnradio" id="btnradio3" autocomplete="off">
+        <label class="btn btn-outline-light" for="btnradio3">OTHERS</label>
+      </div>
+    </div>
+
+    <div onclick="location.href='pagereplacement.html';" class="card type-web">
+      <img id="img_display" src="../assets/images/page.png" />
+      <p class="card_title">Page Replacement</p>
+      <p class="sub_title">Calculate Page Faults</p>
+      <div class="s_desc">
+        <p>Language:<span class="prog_language"> Javascript/jQuery</span></p>
+        <p>Date: June 2021</p>
+      </div>
+    </div>
+    <div onclick="window.open('https://codepen.io/dormammuuuuu/full/MWbpNjN','_blank');" class="card type-web">
       <img id="img_display" src="https://assets.codepen.io/5752974/internal/screenshots/pens/MWbpNjN.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1613483935&width=960" />
       <p class="card_title">Mi 10T (OWN STYLE)</p>
       <p class="sub_title">Product Landing Page</p>
       <div class="s_desc">
-        <p>Language:<span class="prog_language"> HTML/CSS</span></p>
+        <p><span class="prog_language"> HTML/CSS</span></p>
         <p>Date: February 2021</p>
       </div>
     </div>
-    <div onclick="window.open('https://codepen.io/dormammuuuuu/full/mdOmKoN','_blank');" class="card" data-aos="fade-down-right">
+    <div onclick="window.open('https://codepen.io/dormammuuuuu/full/mdOmKoN','_blank');" class="card type-web">
       <img id="img_display" src="https://assets.codepen.io/5752974/internal/screenshots/pens/mdOmKoN.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1613571427&width=960" />
       <p class="card_title">C Documentation</p>
       <p class="sub_title">Technical Documentation Page</p>
       <div class="s_desc">
-        <p>Language:<span class="prog_language"> HTML/CSS</span></p>
+        <p><span class="prog_language"> HTML/CSS</span></p>
         <p>Date: February 2021</p>
       </div>
     </div>
-    <div onclick="window.open('https://codepen.io/dormammuuuuu/full/PobpWQK','_blank');" class="card" data-aos="fade-down-right">
+    <div onclick="window.open('https://codepen.io/dormammuuuuu/full/PobpWQK','_blank');" class="card type-web">
       <img id="img_display" src="https://assets.codepen.io/5752974/internal/screenshots/pens/PobpWQK.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1613394768&width=960" />
       <p class="card_title">Coffee Form</p>
       <p class="sub_title">Survey Form</p>
       <div class="s_desc">
-        <p>Language:<span class="prog_language"> HTML/CSS</span></p>
+        <p><span class="prog_language"> HTML/CSS</span></p>
         <p>Date: February 2021</p>
       </div>
     </div>
-    <div onclick="window.open('https://codepen.io/dormammuuuuu/full/GRNreey','_blank');" class="card">
+    <div onclick="window.open('https://codepen.io/dormammuuuuu/full/GRNreey','_blank');" class="card type-web">
       <img id="img_display" src="https://assets.codepen.io/5752974/internal/screenshots/pens/GRNreey.default.png?fit=cover&format=auto&ha=true&height=540&quality=75&v=2&version=1613459498&width=960" />
       <p class="card_title">General Luna</p>
       <p class="sub_title">Tribute Page</p>
       <div class="s_desc">
-        <p>Language:<span class="prog_language"> HTML/CSS</span></p>
+        <p><span class="prog_language"> HTML/CSS</span></p>
         <p>Date: February 2021</p>
       </div>
     </div>
-    <div onclick="location.href='cocina.html';" class="card">
+    <div onclick="location.href='cocina.html';" class="card type-app">
       <img id="img_display" src="../assets/images/cocina.png" />
       <p class="card_title">Cocina De Manila</p>
       <p class="sub_title">Food Delivery System</p>
@@ -59,7 +80,7 @@
         <p>Date: January 2021</p>
       </div>
     </div>
-    <div onclick="location.href='evoting.html';" class="card">
+    <div onclick="location.href='evoting.html';" class="card type-app">
       <img id="img_display" src="../assets/images/voting_system.png" />
       <p class="card_title">AU E-Voting System</p>
       <p class="sub_title">Electronic Voting System</p>
@@ -68,7 +89,7 @@
         <p>Date: February 2019</p>
       </div>
     </div>
-    <div onclick="location.href='ps_app.html';" class="card" data-aos="fade-down-right">
+    <div onclick="location.href='ps_app.html';" class="card type-app">
       <img id="img_display" src="../assets/images/ps_tut.jpg" />
       <p class="card_title">Photoshop Tutorial App</p>
       <p class="sub_title">Android Application</p>
@@ -77,7 +98,7 @@
         <p>Date: February 2019</p>
       </div>
     </div>
-    <div onclick="location.href='questbot.html';" class="card">
+    <div onclick="location.href='questbot.html';" class="card type-app">
       <img id="img_display" src="../assets/images/questbot.png" />
       <p class="card_title">QuestBot</p>
       <p class="sub_title">Game</p>
@@ -86,7 +107,7 @@
         <p>Date: January 2021</p>
       </div>
     </div>
-    <div onclick="location.href='calculator.html';" class="card">
+    <div onclick="location.href='calculator.html';" class="card type-app">
       <img id="img_display" src="../assets/images/calculator.png" />
       <p class="card_title">Calculator</p>
       <p class="sub_title">Desktop Application</p>
@@ -95,7 +116,7 @@
         <p>Date: November 2020</p>
       </div>
     </div>
-    <div onclick="location.href='tictactoe.html';" class="card">
+    <div onclick="location.href='tictactoe.html';" class="card type-app">
       <img id="img_display" src="../assets/images/tictactoe.png" />
       <p class="card_title">Tic-Tac-Toe</p>
       <p class="sub_title">Desktop Game Application</p>
@@ -106,8 +127,10 @@
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
   <script>
     $(function() {
+      var loader = "all";
       var cards = $('.card');
       for (let i = 1; i < cards.length + 1; i++) {
         $(cards[i - 1]).delay(i * 300).animate({
