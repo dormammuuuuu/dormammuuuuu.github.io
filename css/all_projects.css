@@ -18,7 +18,7 @@ hr {
   background: #202124;
 }
 
-.cocina_open_bg, .questbot_open_bg, .calculator_open_bg, .tictactoe_open_bg, .ps_app_open_bg, .evoting_open_bg, .page_open_bg, .disk_open_bg{
+.cocina_open_bg, .questbot_open_bg, .calculator_open_bg, .tictactoe_open_bg, .ps_app_open_bg, .evoting_open_bg, .page_open_bg, .disk_open_bg, .cpu_open_bg{
   background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../assets/cocina_images/bg.png");
   background-attachment: fixed;
   background-position: center;
@@ -53,6 +53,10 @@ hr {
 
 .disk_open_bg {
   background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../assets/images/disk.png");
+}
+
+.cpu_open_bg {
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../assets/images/cpu.png");
 }
 
 .title {

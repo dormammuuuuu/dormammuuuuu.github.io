@@ -28,7 +28,7 @@ p {
 
 #project-tabs{
   position: relative;
-  margin-bottom: 5em;
+  margin-bottom: 7em;
   width: fit-content;
 }
 
@@ -43,7 +43,7 @@ p {
   letter-spacing: 2px;
   text-align: center;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 /*Row 1 cards*/
