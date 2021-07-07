@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <title>Page Replacement</title>
+  <title>Disk Scheduler</title>
   <link rel="stylesheet" href="css/my.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/all_projects.css">
@@ -12,18 +12,18 @@
 
 <body class="proj_bg" onload="startUp()">
   <div class="top_padding"></div>
-  <div class="page_open_bg">
+  <div class="disk_open_bg">
     <div class="container-fluid" id="head">
     </div>
     <div class="title">
-      <span class="proj_title" id="qbot_title">PAGE REPLACEMENT</span>
+      <span class="proj_title" id="qbot_title">DISK SCHEDULER</span>
     </div>
   </div>
 
   <div id="cont">
     <div id="Description" class="d-margin">
-      <p><strong>Page Replacement</strong> is needed to decide which page needs to be replaced when a new page comes in. Page fault occurs when the current programs attempt to access the memory page for mapping into virtual address space, but it is unable to load into the physical memory.</p>
-      <p> Our objective is to generate a table for visualization of LRU and Optimal Page replacement algorithm as well as the Page Fault/Hit count and ratio. These program were implemented with the use of JavaScript and jQuery</p>
+      <p><strong>Disk Scheduling Algorithms </strong>is a technique that the operating system uses to determine which requests to satisfy first. The purpose of disk scheduling algorithms is to reduce the total seek time.</p>
+      <p>Our goal is to calculate each algorithm's exact total seek time and generate a vertical line chart for visualization. SSTF and LOOK were implemented using JavaScript and jQuery</p>
     </div>
     <div id="Preview" class="d-margin">
       <p class="description_title"><strong>PREVIEW</strong><br /><br /></p>
@@ -35,47 +35,79 @@
           <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
           <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
           <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="assets/page_images/1.png" class="d-block w-100" alt="...">
+            <img src="assets/disk_images/1.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-md-block">
               <p class="sub">This is how the page appears when it is loaded.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/page_images/2.png" class="d-block w-100" alt="...">
+            <img src="assets/disk_images/2.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-md-block">
               <h5>SETTINGS</h5>
-              <p class="sub">This is where the user will configure the settings; in the example, we will use the Least Recently Used algorithm.</p>
+              <p class="sub">This is where the user will configure the settings.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/page_images/3.png" class="d-block w-100" alt="...">
+            <img src="assets/disk_images/3.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-md-block">
               <h5>INPUT VALIDATION</h5>
               <p class="sub">To avoid errors, we implemented a rule for inputs.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/images/page.png" class="d-block w-100" alt="...">
+            <img src="assets/disk_images/4.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-md-block">
-              <h5>OUTPUT</h5>
-              <p class="sub">Least Recently Used Algorithm</p>
+              <h5>SSTF</h5>
+              <p class="sub">In the image above, SSTF Algorithm was used</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/page_images/4.png" class="d-block w-100" alt="...">
+            <img src="assets/images/disk.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-md-block">
-              <h5>SETTINGS</h5>
-              <p class="sub">In the example image, we will use the Optimal Page Replacement algorithm.</p>
+              <h5>OUTPUT</h5>
+              <p class="sub">Shortest Seek Time First (SSTF)</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/page_images/5.png" class="d-block w-100" alt="...">
+            <img src="assets/disk_images/5.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>LOOK - Towards 0</h5>
+              <p class="sub">The LOOK Algorithm was used in the image above, with the direction set to "Towards 0."</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/disk.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-md-block">
               <h5>OUTPUT</h5>
-              <p class="sub">Optimal Page Replacement Algorithm</p>
+              <p class="sub">LOOK - Towards 0</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/disk_images/6.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>LOOK - Towards 200</h5>
+              <p class="sub">The LOOK Algorithm was used in the image above, with the direction set to "Towards 200."</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/disk_images/7.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>OUTPUT</h5>
+              <p class="sub">LOOK - Towards 200</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/disk_images/8.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>RESET</h5>
+              <p class="sub">A RESET button is available to quickly clear all inputs and delete the chart.</p>
             </div>
           </div>
         </div>
