@@ -19,11 +19,22 @@
         <label class="btn btn-outline-light" for="btnradio1">ALL</label>
 
         <input type="radio" class="btn-check" value="web" onchange="projectShow(this)" name="btnradio" id="btnradio2" autocomplete="off">
-        <label class="btn btn-outline-light" for="btnradio2">WEBSITES</label>
+        <label class="btn btn-outline-light" for="btnradio2">WEB DEVELOPMENT</label>
 
-        <input type="radio" class="btn-check" value="other" onchange="projectShow(this)" name="btnradio" id="btnradio3" autocomplete="off">
+        <input type="radio" class="btn-check" value="others" onchange="projectShow(this)" name="btnradio" id="btnradio3" autocomplete="off">
         <label class="btn btn-outline-light" for="btnradio3">OTHERS</label>
       </div>
+        <div id="filter">
+          <p class="filter-p">Filter:</pre>
+          <input type="checkbox" class="btn-check" value="c-lang" onchange="filterChange()" name="filters" id="filter-c" autocomplete="off">
+          <label class="btn btn-outline-light checkbox" for="filter-c">C</label>
+          <input type="checkbox" class="btn-check" value="java-lang" onchange="filterChange()" name="filters" id="filter-java" autocomplete="off">
+          <label class="btn btn-outline-light checkbox" for="filter-java">Java</label>
+          <input type="checkbox" class="btn-check" value="vb-lang" onchange="filterChange()" name="filters" id="filter-asm" autocomplete="off">
+          <label class="btn btn-outline-light checkbox" for="filter-asm">Assembly</label>
+          <input type="checkbox" class="btn-check" value="asm-lang" onchange="filterChange()" name="filters" id="filter-vb" autocomplete="off">
+          <label class="btn btn-outline-light checkbox" for="filter-vb">VB.net</label>
+        </div>
     </div>
 
     <div onclick="location.href='disk.html';" class="card type-web">
@@ -89,7 +100,7 @@
         <p>Date: February 2021</p>
       </div>
     </div>
-    <div onclick="location.href='cocina.html';" class="card type-app">
+    <div onclick="location.href='cocina.html';" class="card type-c-app">
       <img id="img_display" src="../assets/images/cocina.png" />
       <p class="card_title">Cocina De Manila</p>
       <p class="sub_title">Food Delivery System</p>
@@ -98,7 +109,7 @@
         <p>Date: January 2021</p>
       </div>
     </div>
-    <div onclick="location.href='evoting.html';" class="card type-app">
+    <div onclick="location.href='evoting.html';" class="card type-vb-app">
       <img id="img_display" src="../assets/images/voting_system.png" />
       <p class="card_title">AU E-Voting System</p>
       <p class="sub_title">Electronic Voting System</p>
@@ -107,7 +118,7 @@
         <p>Date: February 2019</p>
       </div>
     </div>
-    <div onclick="location.href='ps_app.html';" class="card type-app">
+    <div onclick="location.href='ps_app.html';" class="card type-java-app">
       <img id="img_display" src="../assets/images/ps_tut.jpg" />
       <p class="card_title">Photoshop Tutorial App</p>
       <p class="sub_title">Android Application</p>
@@ -116,7 +127,7 @@
         <p>Date: February 2019</p>
       </div>
     </div>
-    <div onclick="location.href='questbot.html';" class="card type-app">
+    <div onclick="location.href='questbot.html';" class="card type-asm-app">
       <img id="img_display" src="../assets/images/questbot.png" />
       <p class="card_title">QuestBot</p>
       <p class="sub_title">Game</p>
@@ -125,7 +136,7 @@
         <p>Date: January 2021</p>
       </div>
     </div>
-    <div onclick="location.href='calculator.html';" class="card type-app">
+    <div onclick="location.href='calculator.html';" class="card type-java-app">
       <img id="img_display" src="../assets/images/calculator.png" />
       <p class="card_title">Calculator</p>
       <p class="sub_title">Desktop Application</p>
@@ -134,7 +145,7 @@
         <p>Date: November 2020</p>
       </div>
     </div>
-    <div onclick="location.href='tictactoe.html';" class="card type-app">
+    <div onclick="location.href='tictactoe.html';" class="card type-java-app">
       <img id="img_display" src="../assets/images/tictactoe.png" />
       <p class="card_title">Tic-Tac-Toe</p>
       <p class="sub_title">Desktop Game Application</p>
@@ -148,7 +159,7 @@
   <script src="index.js"></script>
   <script>
     $(function() {
-      var loader = "all";
+      $('#filter').hide();
       var cards = $('.card');
       for (let i = 1; i < cards.length + 1; i++) {
         $(cards[i - 1]).delay(i * 300).animate({

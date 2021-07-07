@@ -32,6 +32,19 @@ p {
   width: fit-content;
 }
 
+#filter{
+  margin-top: 1em;
+}
+
+.filter-p{
+  display: inline-block;
+  padding: 1em;
+}
+
+.checkbox{
+  margin: .3em!important;
+}
+
 .container-proj {
   margin: auto;
 }
